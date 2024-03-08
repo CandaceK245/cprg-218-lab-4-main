@@ -9,50 +9,61 @@
 }
 
 .hero-container {
-  background-color: #403d58;
-  color: #fff;
-  height: 100vh;
+  background-image: url(../assets/pexels-abby-chung-4508964.jpg); opacity: .80;
+  background-position: center;
+  background-size:contain;
+  color: #faf9f9;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .content-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: #dbd56e;
   height: 600px;
+  text-align: center;
+  align-items: center;
 }
 
 .accordion-container {
-  background-color: #fc7753;
+  background-color: #126900;
   color: #fff;
-  height: 600px;
+  height: 200px;
 }
 
 .footer-container {
   display: flex;
-  background-color: #f2efea;
+  background-color: #aad2f7;
   width: 100%;
   height: 300px;
   position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #4d3202;
+  color: #dbb0f5;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #025383;
 }
 
 .accordion:after {
-  content: '\1F862';
-  color: #777;
+  content: '\1F862'; 
+  color: #dbb0f5;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -60,12 +71,27 @@
 
 .active:after {
   content: "\1F863";
+  color: #dbb0f5
 }
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.content-image {
+  max-height: 590px;
+  max-width: 100%;
+  padding: 18px;
+}
+
+.block {
+  padding: 18px;
+}
+
+.footer-block{
+  min-width: 25%;
 }

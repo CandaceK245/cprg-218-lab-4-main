@@ -12,3 +12,7 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+var date = new Date().getFullYear();
+
+document.getElementById("year").innerHTML = date;
